@@ -1,0 +1,129 @@
+- Class: meta
+  Course: Data Analysis with R
+  Lesson: Getting Started
+  Author: Richard Dunks
+  Type: Standard
+  Organization: Datapolitan LLC
+  Version: 2.4.4
+
+- Class: text
+  Output: Hello and welcome to Data Analysis with R! This first lesson is intended to get
+    you started with the basics of R that we'll be building on in class today.
+
+- Class: text
+  Output: We'll begin by exploring some basic building blocks of the R programming
+    language for simple data analysis.
+
+- Class: text
+  Output: If at any point you'd like more information on a particular topic related
+    to R, you can type help.start() at the prompt, which will open a menu of resources
+    (either within RStudio or your default web browser, depending on your setup).
+    Alternatively, a simple web search often yields the answer you're looking for.
+
+- Class: cmd_question
+  Output: In its simplest form, R can be used as an interactive calculator. Type
+    5 + 7 and press Enter.
+  CorrectAnswer: 5 + 7
+  AnswerTests: omnitest(correctExpr='5 + 7')
+  Hint: Type 5 + 7 and press Enter.
+
+- Class: text
+  Output: R simply prints the result of 12 by default. R can also take in a longer series
+    of numbers and calucations, providing the answer as an output.
+
+- Class: text
+  Output: We can easily repeat a command by pressing the up arrow key on the console and 
+    cycle through the commands we've entered, starting with the most recent.
+
+- Class: text
+  Output: This can be a real time saver when we're trying to figure out the right code 
+    for what we want to do or just trying different options.
+
+- Class: cmd_question
+  Output: Feel free to try this trick now by pressing the up arrow key and adding the 
+    operators to multiple (*) 5 + 7 by 2, subtract (-) 13 and finally divide (/) by 2 
+    all on one line, then press Enter for the result.
+  CorrectAnswer: 5 + 7 * 2 - 13 / 2
+  AnswerTests: omnitest(correctExpr='5 + 7 * 2 - 13 / 2')
+  Hint: Type 5 + 7 * 2 - 13 / 2 and press Enter.
+
+- Class: text
+  Output: However, R is a programming
+    language and often the reason we use a programming language as opposed to a calculator
+    is to automate some process or avoid unnecessary repetition.
+
+- Class: text
+  Output: In this case, we may want to use our result from above in a second calculation.
+    Instead of retyping 5 + 7 every time we need it, we can just create a new variable
+    that stores the result.
+
+- Class: text
+  Output: 'The way you assign a value to a variable in R is by using the assignment
+    operator, which is just a ''less than'' symbol followed by a ''minus'' sign. It
+    looks like this: <-'
+
+- Class: text
+  Output: Think of the assignment operator as an arrow. You are assigning the value
+    on the right side of the arrow to the variable name on the left side of the arrow.
+
+- Class: cmd_question
+  Output: To assign the result of 5 + 7 to a new variable called x, you type x <-
+    5 + 7. This can be read as 'x gets 5 plus 7'. Give it a try now.
+  CorrectAnswer: x <- 5 + 7
+  AnswerTests: any_of_exprs('x <- 5 + 7', 'x <- 7 + 5')
+  Hint: Type x <- 5 + 7. It's important to include a single space on each side of
+    the assignment operator, but do NOT put a space between the `<` and the `-` that
+    form the arrow.
+
+- Class: text
+  Output: You'll notice that R did not print the result of 12 this time. When you
+    use the assignment operator, R assumes that you don't want to see the result immediately,
+    but rather that you intend to use the result for something else later on.
+
+- Class: cmd_question
+  Output: To view the contents of the variable x, just type x and press Enter. Try
+    it now.
+  CorrectAnswer: x
+  AnswerTests: omnitest(correctExpr='x')
+  Hint: Type x and press Enter. This will automatically print the value of x.
+
+- Class: cmd_question
+  Output: Now, store the result of 5 + 7 * 2 - 13 / 2 in a new variable called y. You can type
+    this all out or you can try pressing the up arrow key until you come to what you entered before
+    and adding the assignment operation at the beginning (far left) of the series of operations.
+  CorrectAnswer: y <- 5 + 7 * 2 - 13 / 2
+  AnswerTests: omnitest(correctExpr='y <- 5 + 7 * 2 - 13 / 2')
+  Hint: Type y <- 5 + 7 * 2 - 13 / 2 and press Enter. Whether you use 5 + 7 * 2 - 13 / 2 
+    or 5+7*2-13/2 is personal preference, but it's good habit to include a space on either 
+    side of an assignment (`<-`) and arithmetic operators (`+`, `-`, `*`, `/`, etc.).
+
+- Class: cmd_question
+  Output: What is the value of y? Type y to find out.
+  CorrectAnswer: 'y'
+  AnswerTests: omnitest(correctExpr='y')
+  Hint: Type y and press Enter.
+
+- Class: text
+  Output: We can also do math with the variables we just created.
+
+- Class: cmd_question
+  Output: What is the value of x - y? Find out now.
+  CorrectAnswer: x - y
+  AnswerTests: omnitest(correctExpr='x - y')
+  Hint: Type x - y to find the result of subtracting the value in the variable we're 
+    calling x and the value in the variable we're calling y.
+
+- Class: cmd_question
+  Output: Remember that you can change a command you just entered by pressing the up arrow key. 
+    Do that now and change the code to calculate the sum of x and y.
+  CorrectAnswer: x + y
+  AnswerTests: omnitest(correctExpr='x + y')
+  Hint: Type x + y to find the result of adding the value in the variable we're 
+    calling x and the value in the variable we're calling y.
+
+- Class: text
+  Output: Great job! You're well on your way to learning R! Let the instructor or TA know you've finished
+    and feel free to ask any questions of what you've just learned.
+
+
+
