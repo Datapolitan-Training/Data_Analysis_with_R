@@ -90,7 +90,8 @@
 - Class: cmd_question
   Output: Now, store the result of 5 + 7 * 2 - 13 / 2 in a new variable called y. You can type
     this all out or you can try pressing the up arrow key until you come to what you entered before
-    and adding the assignment operation at the beginning (far left) of the series of operations.
+    and adding the assignment operation at the beginning of the series of operations by moving your
+    cursor to the beginning of the line with the arrow keys or click with your mouse.
   CorrectAnswer: y <- 5 + 7 * 2 - 13 / 2
   AnswerTests: omnitest(correctExpr='y <- 5 + 7 * 2 - 13 / 2')
   Hint: Type y <- 5 + 7 * 2 - 13 / 2 and press Enter. Whether you use 5 + 7 * 2 - 13 / 2 
@@ -120,6 +121,27 @@
   AnswerTests: omnitest(correctExpr='x + y')
   Hint: Type x + y to find the result of adding the value in the variable we're 
     calling x and the value in the variable we're calling y.
+
+- Class: text
+  Output: Instead of just having the output display on the command line, we can also explicitly tell R to print
+    the output using the function `print()`. 
+
+- Class: cmd_question
+  Output: Try that now by typing print(x) and seeing the result.
+  CorrectAnswer: print(x)
+  AnswerTests: omnitest(correctExpr='print(x)')
+  Hint: Type print(x) to see the result. 
+
+- Class: text
+  Output: Notice this did the same thing as just typing x, but it introduces the idea of functions, which we'll talk
+    about later in class. 
+
+- Class: text
+  Output: This also lets us talk about getting help. If you ever want to learn more about a function, you can type '?'
+    before the function or command name to access the help documentation.
+
+- Class: text
+  Output: Keep this in mind and you'll know all you need to know about getting around in R.
 
 - Class: text
   Output: Great job! You're well on your way to learning R! Let the instructor or TA know you've finished
