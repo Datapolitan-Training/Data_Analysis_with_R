@@ -1,0 +1,32 @@
+- Class: meta
+  Course: Data Analysis with R
+  Lesson: Basic Exploratory Analysis
+  Author: Richard Dunks
+  Type: Standard
+  Organization: Datapolitan LLC
+  Version: 2.4.4
+
+- Class: text
+  Output: Hello and welcome to Data Analysis with R! This second lesson is intended to get you started with the basics of exploring a dataset in R.
+
+- Class: text
+  Output: We'll begin by exploring a basic dataset that's built into R so we can explore basic syntax and commands in R.
+
+- Class: text
+  Output: If at any point you'd like more information on a particular topic related
+    to R, you can type help.start() at the prompt, which will open a menu of resources
+    (either within RStudio or your default web browser, depending on your setup).
+    Alternatively, a simple web search often yields the answer you're looking for.
+
+- Class: text
+  Output: If you're not already familiar with it, Old Faithful is a geyser in Yellowstone Park in the state of Wyoming.
+
+- Class: text
+  Output: To give R a command, we start with the function name and put whatever we're calling the function on in parenthesis, like this "command(data)".
+  
+- Class: cmd_question
+  Output: To get started, you need to view the data using the "View" command. The dataset is called "faithful." Based on the basic format of R commands (command(data), try to open it now with this command.
+  CorrectAnswer: View(faithful)
+  AnswerTests: omnitest(correctExpr='View(faithful')
+  Hint: We start an R command with the function (in this case "View") and our data is called "faithful." Try putting these together with the "faithful" in parenthesis.
+
