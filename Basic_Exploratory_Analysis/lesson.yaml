@@ -13,10 +13,7 @@
   Output: We'll begin by exploring a basic dataset that's built into R so we can explore basic syntax and commands in R.
 
 - Class: text
-  Output: If at any point you'd like more information on a particular topic related
-    to R, you can type help.start() at the prompt, which will open a menu of resources
-    (either within RStudio or your default web browser, depending on your setup).
-    Alternatively, a simple web search often yields the answer you're looking for.
+  Output: If at any point you'd like more information on a particular topic related to R, you can type help.start() at the prompt, which will open a menu of resources (either within RStudio or your default web browser, depending on your setup). Alternatively, a simple web search often yields the answer you're looking for.
 
 - Class: text
   Output: If you're not already familiar with it, Old Faithful is a geyser in Yellowstone Park in the state of Wyoming.
